@@ -22,6 +22,6 @@ class Show < ActiveRecord::Base
   end
 
   def Show::popular_shows
-    self.where("rating > ?",5).flatten.first
+    self.where("rating > ?",5).flatten
   end
 end
