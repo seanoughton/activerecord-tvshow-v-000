@@ -13,7 +13,6 @@ class Show < ActiveRecord::Base
   end
 
   def Show::least_popular_show
-    x =
     self.where("rating = ?",(Show::lowest_rating)).flatten.first
   end
 
