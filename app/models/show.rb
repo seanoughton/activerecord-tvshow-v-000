@@ -7,4 +7,7 @@ class Show < ActiveRecord::Base
     x = (Show::highest_rating)
     self.where("rating = ?",x).flatten.first
   end
+
+  def Show::lowest_rating
+  end
 end
