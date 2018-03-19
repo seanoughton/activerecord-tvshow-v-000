@@ -24,4 +24,7 @@ class Show < ActiveRecord::Base
   def Show::popular_shows
     self.where("rating > ?",5).flatten
   end
+
+  def shows_by_alphabetical_order
+  end
 end
