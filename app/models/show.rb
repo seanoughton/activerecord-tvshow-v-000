@@ -4,8 +4,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show::most_popular_show
-    x = (Show::highest_rating)
-    self.where("rating = ?",x).flatten.first
+    self.where("rating = ?",(Show::highest_rating)).flatten.first
   end
 
   def Show::lowest_rating
